@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>国内接入 Claude / GPT 配置指南</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1f2328; --muted:#5b6570; --line:#e3e6ea; --accent:#185FA5; --accent-fg:#ffffff; --tip-bg:#FAEEDA; --tip-fg:#633806; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#f6f7f9; color:var(--fg); font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; line-height:1.7; }
+  .wrap { max-width:680px; margin:0 auto; padding:32px 20px 48px; }
+  .card { background:var(--bg); border:1px solid var(--line); border-radius:12px; padding:28px 24px; }
+  h1 { font-size:22px; font-weight:600; margin:0 0 8px; }
+  .sub { color:var(--muted); font-size:14px; margin:0 0 24px; }
+  h2 { font-size:15px; font-weight:600; margin:28px 0 12px; }
+  .step { border-left:2px solid var(--line); padding:0 0 0 16px; margin:0 0 20px; }
+  .step b { display:block; font-size:14px; margin-bottom:4px; }
+  .step p { margin:0; font-size:14px; color:var(--muted); }
+  pre { background:#f6f8fa; border:1px solid var(--line); border-radius:8px; padding:12px 14px; overflow-x:auto; font-size:13px; margin:10px 0 0; }
+  code { font-family:ui-monospace,Consolas,Menlo,monospace; }
+  .cta { display:block; text-align:center; background:var(--accent); color:var(--accent-fg); text-decoration:none; border-radius:10px; padding:14px; font-size:16px; font-weight:600; margin:28px 0 12px; }
+  .cta2 { display:block; text-align:center; font-size:13px; color:var(--muted); }
+  .tip { background:var(--tip-bg); color:var(--tip-fg); border-radius:8px; padding:12px 14px; font-size:13px; margin-top:24px; }
+  .note { font-size:13px; color:var(--muted); margin-top:8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>国内接入 Claude / GPT</h1>
+    <p class="sub">三步配好 Claude Code、Cherry Studio 和沉浸式翻译</p>
+
+    <h2>第一步 · 拿一个 API Key</h2>
+    <div class="step">
+      <b>注册并创建密钥</b>
+      <p>注册后在控制台新建一个 API Key，复制保存。所有客户端用的都是同一个 Key。</p>
+    </div>
+
+    <h2>第二步 · 填 Base URL</h2>
+    <div class="step">
+      <b>把接口地址换成中转地址</b>
+      <p>客户端里填下面的地址（请以站内文档给出的实际地址为准）：</p>
+      <pre><code>https://yycode.net/v1</code></pre>
+      <p class="note">Claude Code 用环境变量：<code>ANTHROPIC_BASE_URL</code>；OpenAI 兼容客户端（Cherry Studio / NextChat / 沉浸式翻译）填在「API 地址」一栏。</p>
+    </div>
+
+    <h2>第三步 · 选模型开跑</h2>
+    <div class="step">
+      <b>在模型列表里选你要的模型</b>
+      <p>选好后发一条消息验证连通性，能正常返回就说明配好了。</p>
+    </div>
+
+    <a class="cta" href="https://yycode.net/sign-up?aff=CHsR">注册并获取 API Key</a>
+    <span class="cta2">注册后按上面三步配置即可</span>
+
+    <div class="tip">
+      建议先小额充值，跑一两天确认速度和稳定性符合你的需求再考虑加量。任何第三方中转都存在服务变动的可能，不要把重要业务绑死在单一渠道上。
+    </div>
+  </div>
+</div>
+</body>
+</html>
