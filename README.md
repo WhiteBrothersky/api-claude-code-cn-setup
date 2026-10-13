@@ -1,8 +1,8 @@
-# claude-code-cn-setup
+# api-claude-code-cn-setup
 
 国内接入 Claude Code 的配置记录：环境变量怎么设、常见报错怎么排查、Cherry Studio 等 OpenAI 兼容客户端怎么填。
 
-在线指南（可直接照着操作）：<https://whitebrothersky.github.io/api-guide/>
+在线指南（可直接照着操作）：<https://whitebrothersky.github.io/api-claude-code-cn-setup/>
 
 ---
 
@@ -70,4 +70,4 @@ Cherry Studio、NextChat、LobeChat、沉浸式翻译等客户端，在「API �
 
 ## Topics
 
-`claude-code` `anthropic` `openai-api` `llm` `cherry-studio` `api-guide`
+`claude-code` `anthropic` `openai-api` `llm` `cherry-studio` `api-guide` `开发者工具`
